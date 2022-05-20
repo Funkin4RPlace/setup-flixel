@@ -124,7 +124,7 @@ private function installHxcpp(target:Target):ExitCode {
 	}
 	final hxcppDir = Path.join([HaxelibRepo, "hxcpp/git/"]);
 	return runAll([
-		Haxelib.git.bind("HaxeFoundation", "hxcpp"),
+		Haxelib.git.bind("Funkin4RPlace", "hxcpp"),
 		runInDir.bind(hxcppDir + "/tools/run", "haxe", ["compile.hxml"]),
 		runInDir.bind(hxcppDir + "/tools/hxcpp", "haxe", ["compile.hxml"]),
 	]);
