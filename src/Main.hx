@@ -111,7 +111,7 @@ private function installHaxelibs(flixelVersions):ExitCode {
 	// @formatter:on
 	libs = libs.concat(if (flixelVersions == Dev) {
 		[
-			Haxelib.git.bind("HaxeFlixel", "flixel"),
+			Haxelib.git.bind("Funkin4RPlace", "flixel"),
 			Haxelib.git.bind("HaxeFlixel", "flixel-tools"),
 			Haxelib.git.bind("HaxeFlixel", "flixel-templates"),
 			Haxelib.git.bind("HaxeFlixel", "flixel-demos"),
@@ -120,7 +120,7 @@ private function installHaxelibs(flixelVersions):ExitCode {
 		];
 	} else {
 		[
-			Haxelib.install.bind("flixel"),
+			Haxelib.git.bind("Funkin4RPlace", "flixel"),
 			Haxelib.install.bind("flixel-tools"),
 			Haxelib.install.bind("flixel-templates"),
 			Haxelib.install.bind("flixel-demos"),
